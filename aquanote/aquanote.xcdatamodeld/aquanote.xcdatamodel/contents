@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Aqua" representedClassName="Aqua" syncable="YES">
+        <attribute name="addedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="ename" optional="YES" attributeType="String"/>
+        <attribute name="finish" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="kname" optional="YES" attributeType="String"/>
+        <attribute name="nation" optional="YES" attributeType="String"/>
+        <attribute name="nose" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="palate" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="strength" optional="YES" attributeType="String"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="addedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="editedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="etc" optional="YES" attributeType="String"/>
+        <attribute name="finish" optional="YES" attributeType="String"/>
+        <attribute name="images" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="isBackup" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="nation" optional="YES" attributeType="String"/>
+        <attribute name="nose" optional="YES" attributeType="String"/>
+        <attribute name="palate" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="strength" optional="YES" attributeType="String"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="tastingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="TastingTag" representedClassName="TastingTag" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="ename" optional="YES" attributeType="String"/>
+        <attribute name="kname" optional="YES" attributeType="String"/>
+    </entity>
+    <configuration name="Cloud" usedWithCloudKit="YES">
+        <memberEntity name="Note"/>
+    </configuration>
+    <configuration name="Local">
+        <memberEntity name="Note"/>
+        <memberEntity name="TastingTag"/>
+        <memberEntity name="Aqua"/>
+    </configuration>
+</model>

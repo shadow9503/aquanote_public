@@ -1,0 +1,136 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+# require 'dotenv'
+# Dotenv.load('.env')
+
+default_platform(:ios)
+
+platform :ios do
+  # match passwword: aqua95 / keychain_password: 9390
+  desc "Testflight 업로드 & IPA 추출"
+  lane :ext do
+    # 1. build config 설정
+    build_type = prompt(text: "Select build type: [test/release]").to_sym
+  
+    config = ""
+    if build_type.downcase == :test
+      config = "Debug(production)"
+    else
+      config = "Release(production)"
+    end
+
+    # 2. xcconfig 파일 경로 설정
+    project_dir = File.expand_path("..", __dir__)    
+    xcconfig_file = "#{project_dir}/release-production.xcconfig"
+
+    # 3. 현재 버전 및 빌드 번호 읽기 & 버전 컨트롤
+    # ex) 특정 file에서 문자열 MARKETING_VERSION를 찾고 해당 행의 3열 데이터를 strip하여 반환
+    #     MARKETING_VERSION = 1.2.3
+    current_version = `grep MARKETING_VERSION #{xcconfig_file} | awk '{print $3}'`.strip
+    build_number = `grep BUILD_NUMBER #{xcconfig_file} | awk '{print $3}'`.strip
+    major, minor, patch = current_version.split('.').map(&:to_i)
+    build = build_number.to_i
+  
+    UI.message "Current Version #{current_version}"
+
+    version_part = prompt(text: "Which part to increment? [major/minor/patch/build]")
+  
+    case version_part
+    when 'major'
+      major += 1
+      minor = 0
+      patch = 0
+      build = 1
+    when 'minor'
+      minor += 1
+      patch = 0
+      build = 1
+    when 'patch'
+      patch += 1
+      build = 1
+    when 'build'
+      build += 1
+    else
+      UI.error "Invalid input. Please choose 'major', 'minor', 'patch' or 'build'."
+    end
+  
+    new_version = "#{major}.#{minor}.#{patch}"
+    new_build = "#{build}"
+
+    # .xcconfig 파일의 MARKETING_VERSION 업데이트
+    # sed 명령어를 사용하여 변경사항 반영
+    sh "sed -i '' 's/^MARKETING_VERSION = .*/MARKETING_VERSION = #{new_version}/' #{xcconfig_file}"
+    sh "sed -i '' 's/^BUILD_NUMBER = .*/BUILD_NUMBER = #{new_build}/' #{xcconfig_file}"
+
+    UI.message "Version updated to #{new_version}"
+
+    # 4. 빌드 클린 여부
+    needClean = prompt(text: "Need clean build before archive? Y/N")
+    cleaning = false
+
+    case needClean.downcase
+    when 'y'
+      cleaning = true
+    when 'n'
+      cleaning = false
+    end
+
+    # 5. 테스트 플라이트 업로드 여부
+    uploadTestflight = prompt(text: "Upload Testflight? Y/N")
+    needUploadTestflight = false
+
+    case uploadTestflight.downcase
+    when 'y'
+      needUploadTestflight = true
+    when 'n'
+      needUploadTestflight = false
+    end
+
+    # 6. git repo로부터 appstore용 최신 프로파일로 동기화
+    match(type: "appstore")
+
+    # 7. Archive & IPA 추출
+    gym(
+      workspace: "aquanote.xcworkspace",
+      scheme: "aquanote-production",
+      configuration: config,
+      output_name: "aquanote_#{new_version}.ipa",
+      output_directory: "./build/#{config}/#{new_version}",  # 원하는 디렉토리로 변경      
+      buildlog_path: "./build/logs/#{config}/#{new_version}",
+      analyze_build_time: true,
+      silent: true,
+      clean: cleaning,
+      include_symbols: true,
+      include_bitcode: false,
+      export_options: {
+        method: "app-store",
+        uploadSymbols: true,
+      },
+    )
+
+    # 8. testFlight 업로드
+    if needUploadTestflight == true
+      upload_to_testflight(
+        skip_submission: false,
+        skip_waiting_for_build_processing: false,
+        demo_account_required: false,
+        changelog: "변경사항 로그 테스트" # 테스트 내용
+      )
+    end
+
+  end
+end
+

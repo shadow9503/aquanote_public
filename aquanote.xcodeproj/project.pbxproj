@@ -1,0 +1,1321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830B1DDFD13253BA7148A758 /* Pods_aquanote_aquanoteTestsUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E334A145C1B55AF74199F2A4 /* Pods_aquanote_aquanoteTestsUnit.framework */; };
+		9F6E40D49DDF569262CBE84B /* Pods_aquanote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DE7B5289B0E138DDA5FFEA /* Pods_aquanote.framework */; };
+		F81EB7B02949CE9500A33F98 /* ++UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81EB7AF2949CE9400A33F98 /* ++UIViewController.swift */; };
+		F81EB7B22949CEF800A33F98 /* ++UISearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81EB7B12949CEF800A33F98 /* ++UISearchController.swift */; };
+		F81EB7B62949D65200A33F98 /* SearchTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81EB7B52949D65200A33F98 /* SearchTerm.swift */; };
+		F821139F29520BED00B069E8 /* LoadingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F821139E29520BED00B069E8 /* LoadingViewCell.swift */; };
+		F82113A32952255F00B069E8 /* SearchTermContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113A22952255F00B069E8 /* SearchTermContentView.swift */; };
+		F82113A52952258700B069E8 /* SearchTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113A42952258700B069E8 /* SearchTermCell.swift */; };
+		F82113A72952D3D400B069E8 /* AquaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113A62952D3D400B069E8 /* AquaService.swift */; };
+		F82113AD29530C9800B069E8 /* DBInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113AC29530C9800B069E8 /* DBInfo.swift */; };
+		F82113B0295310EA00B069E8 /* Aqua+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113AE295310EA00B069E8 /* Aqua+CoreDataClass.swift */; };
+		F82113B1295310EA00B069E8 /* Aqua+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113AF295310EA00B069E8 /* Aqua+CoreDataProperties.swift */; };
+		F82113B729534E1400B069E8 /* ++Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113B629534E1400B069E8 /* ++Date.swift */; };
+		F82113BB2954900200B069E8 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113BA2954900200B069E8 /* TagService.swift */; };
+		F82113C6295499CE00B069E8 /* TastingTag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113C4295499CE00B069E8 /* TastingTag+CoreDataClass.swift */; };
+		F82113C7295499CE00B069E8 /* TastingTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82113C5295499CE00B069E8 /* TastingTag+CoreDataProperties.swift */; };
+		F83B730629475DB5000BC2EB /* NoteListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B730529475DB5000BC2EB /* NoteListContentView.swift */; };
+		F83B73082948424D000BC2EB /* whiskey.png in Resources */ = {isa = PBXBuildFile; fileRef = F83B73072948424D000BC2EB /* whiskey.png */; };
+		F83B730A29484645000BC2EB /* ++UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B730929484645000BC2EB /* ++UILabel.swift */; };
+		F83B730E29486021000BC2EB /* IconAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83B730D29486021000BC2EB /* IconAssets.xcassets */; };
+		F83B731529498271000BC2EB /* AquaListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B731429498271000BC2EB /* AquaListViewCell.swift */; };
+		F83B73172949828F000BC2EB /* AquaListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B73162949828F000BC2EB /* AquaListContentView.swift */; };
+		F83B73192949847D000BC2EB /* AquaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B73182949847D000BC2EB /* AquaListViewController.swift */; };
+		F83B731B29498704000BC2EB /* AquaListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B731A29498704000BC2EB /* AquaListViewPresenter.swift */; };
+		F83F02AD2DE7104600321DAF /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F02AC2DE7104600321DAF /* Version.swift */; };
+		F83F02AF2DE710DC00321DAF /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F02AE2DE710DC00321DAF /* NoteService.swift */; };
+		F84821EE299FA99D00BDF147 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84821EC299FA99D00BDF147 /* Note+CoreDataClass.swift */; };
+		F84821EF299FA99D00BDF147 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84821ED299FA99D00BDF147 /* Note+CoreDataProperties.swift */; };
+		F84821F229A104C200BDF147 /* FIRStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84821F129A104C200BDF147 /* FIRStorageService.swift */; };
+		F84DC8B5299636A500EED240 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DC8B4299636A500EED240 /* Toast.swift */; };
+		F84DC8BB299CD3FE00EED240 /* NoResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DC8BA299CD3FE00EED240 /* NoResultsCell.swift */; };
+		F8591CE02A10E46000694C5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8591CDF2A10E46000694C5A /* GoogleService-Info.plist */; };
+		F8611155293B6CE0008BE297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8611154293B6CE0008BE297 /* AppDelegate.swift */; };
+		F8611157293B6CE0008BE297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8611156293B6CE0008BE297 /* SceneDelegate.swift */; };
+		F861115F293B6CE0008BE297 /* aquanote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F861115D293B6CE0008BE297 /* aquanote.xcdatamodeld */; };
+		F8611161293B6CE2008BE297 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8611160293B6CE2008BE297 /* ColorAssets.xcassets */; };
+		F86317E529A645420094FE43 /* CustomLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86317E429A645420094FE43 /* CustomLaunchScreen.storyboard */; };
+		F86317E729A84DEA0094FE43 /* AppLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86317E629A84DEA0094FE43 /* AppLoginService.swift */; };
+		F86317E929A9F8D30094FE43 /* FIRStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86317E829A9F8D30094FE43 /* FIRStoreService.swift */; };
+		F86BDE8C29CC16C800622C92 /* aquanote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F861115D293B6CE0008BE297 /* aquanote.xcdatamodeld */; };
+		F86BDE9029CC394100622C92 /* CoredataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BDE8F29CC394100622C92 /* CoredataTestCase.swift */; };
+		F8AA12B829680828006621DA /* AquaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA12B729680828006621DA /* AquaDetailViewController.swift */; };
+		F8AA12BA297289D4006621DA /* NoteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA12B9297289D4006621DA /* NoteInputViewController.swift */; };
+		F8AA12BC297289DD006621DA /* NoteInputViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA12BB297289DD006621DA /* NoteInputViewPresenter.swift */; };
+		F8B27A65299DA59400823D91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8B27A67299DA59400823D91 /* InfoPlist.strings */; };
+		F8B27A6A299DA95700823D91 /* AquaRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B27A69299DA95700823D91 /* AquaRequestViewController.swift */; };
+		F8B27A6C299E472200823D91 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B27A6B299E472200823D91 /* RootView.swift */; };
+		F8CEB75929C4582800C6625E /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CEB75829C4582800C6625E /* NoteModel.swift */; };
+		F8D25CAD29459FF50097E701 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25CAC29459FF50097E701 /* CoreDataService.swift */; };
+		F8D90B3729824D54001FE693 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D90B3629824D54001FE693 /* NoteDetailViewController.swift */; };
+		F8D90B3929829C6A001FE693 /* NoteDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D90B3829829C6A001FE693 /* NoteDetailViewPresenter.swift */; };
+		F8D90B3B2983C258001FE693 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D90B3A2983C257001FE693 /* ImageCollectionViewCell.swift */; };
+		F8E419B1298B67DC009D9E47 /* NoteDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E419B0298B67DC009D9E47 /* NoteDetailContentView.swift */; };
+		F8ED1460293B895F0058E078 /* wave.png in Resources */ = {isa = PBXBuildFile; fileRef = F8ED145F293B895F0058E078 /* wave.png */; };
+		F8ED1464293B8AE10058E078 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED1463293B8AE10058E078 /* RootViewController.swift */; };
+		F8ED146B293B92FD0058E078 /* RootViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED146A293B92FD0058E078 /* RootViewPresenter.swift */; };
+		F8ED1473293DFB510058E078 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED146F293DFB510058E078 /* NotoSansKR-Medium.otf */; };
+		F8ED1474293DFB510058E078 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED1470293DFB510058E078 /* NotoSansKR-Light.otf */; };
+		F8ED1475293DFB510058E078 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED1471293DFB510058E078 /* NotoSansKR-Bold.otf */; };
+		F8ED1476293DFB510058E078 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED1472293DFB510058E078 /* NotoSansKR-Regular.otf */; };
+		F8ED1479293DFBF00058E078 /* ++UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED1478293DFBF00058E078 /* ++UIFont.swift */; };
+		F8ED147B293E01170058E078 /* ++UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED147A293E01170058E078 /* ++UIColor.swift */; };
+		F8ED147E293E2B7B0058E078 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED147D293E2B7B0058E078 /* NoteListViewController.swift */; };
+		F8ED1481293E2FE60058E078 /* NoteListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED1480293E2FE60058E078 /* NoteListViewPresenter.swift */; };
+		F8ED148A293E34070058E078 /* AquanoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED1489293E34070058E078 /* AquanoteAPI.swift */; };
+		F8ED1490293F7EB90058E078 /* NoteListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED148F293F7EB90058E078 /* NoteListViewCell.swift */; };
+		F8F85F8A29AC7DF80008CD99 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F85F8929AC7DF80008CD99 /* NetworkMonitor.swift */; };
+		F8F85F8E29AF6E690008CD99 /* RevokeMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F85F8D29AF6E690008CD99 /* RevokeMemberViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F86BDE6229CBEC0200622C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8611149293B6CE0008BE297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8611150293B6CE0008BE297;
+			remoteInfo = aquanote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EBBBCA6C9751A5E2BC080F /* Pods-aquanote-aquanoteTestsUnit.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote-aquanoteTestsUnit.debug(production).xcconfig"; path = "Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit.debug(production).xcconfig"; sourceTree = "<group>"; };
+		33BB663ED2CFCA9BD664E141 /* Pods-aquanote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote.debug.xcconfig"; path = "Target Support Files/Pods-aquanote/Pods-aquanote.debug.xcconfig"; sourceTree = "<group>"; };
+		58405BBC558A682FB538B569 /* Pods-aquanote.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote.release(production).xcconfig"; path = "Target Support Files/Pods-aquanote/Pods-aquanote.release(production).xcconfig"; sourceTree = "<group>"; };
+		6DA8F8AD0816688968969E4C /* Pods-aquanote-aquanoteTestsUnit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote-aquanoteTestsUnit.release.xcconfig"; path = "Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit.release.xcconfig"; sourceTree = "<group>"; };
+		7094BA33363C57927C721AB3 /* Pods-aquanote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote.release.xcconfig"; path = "Target Support Files/Pods-aquanote/Pods-aquanote.release.xcconfig"; sourceTree = "<group>"; };
+		76884EF3D6A44E9A5EF26028 /* Pods-aquanote.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote.debug(production).xcconfig"; path = "Target Support Files/Pods-aquanote/Pods-aquanote.debug(production).xcconfig"; sourceTree = "<group>"; };
+		96DE7B5289B0E138DDA5FFEA /* Pods_aquanote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aquanote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DED4422DBDE8AD3AEC05AB /* Pods-aquanote-aquanoteTestsUnit.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote-aquanoteTestsUnit.release(production).xcconfig"; path = "Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit.release(production).xcconfig"; sourceTree = "<group>"; };
+		E334A145C1B55AF74199F2A4 /* Pods_aquanote_aquanoteTestsUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aquanote_aquanoteTestsUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81EB7AF2949CE9400A33F98 /* ++UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++UIViewController.swift"; sourceTree = "<group>"; };
+		F81EB7B12949CEF800A33F98 /* ++UISearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++UISearchController.swift"; sourceTree = "<group>"; };
+		F81EB7B52949D65200A33F98 /* SearchTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTerm.swift; sourceTree = "<group>"; };
+		F821139E29520BED00B069E8 /* LoadingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewCell.swift; sourceTree = "<group>"; };
+		F82113A22952255F00B069E8 /* SearchTermContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermContentView.swift; sourceTree = "<group>"; };
+		F82113A42952258700B069E8 /* SearchTermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermCell.swift; sourceTree = "<group>"; };
+		F82113A62952D3D400B069E8 /* AquaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaService.swift; sourceTree = "<group>"; };
+		F82113AC29530C9800B069E8 /* DBInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBInfo.swift; sourceTree = "<group>"; };
+		F82113AE295310EA00B069E8 /* Aqua+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Aqua+CoreDataClass.swift"; path = "aquanote/Aqua+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F82113AF295310EA00B069E8 /* Aqua+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Aqua+CoreDataProperties.swift"; path = "aquanote/Aqua+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F82113B629534E1400B069E8 /* ++Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++Date.swift"; sourceTree = "<group>"; };
+		F82113BA2954900200B069E8 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
+		F82113C4295499CE00B069E8 /* TastingTag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TastingTag+CoreDataClass.swift"; path = "aquanote/TastingTag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F82113C5295499CE00B069E8 /* TastingTag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TastingTag+CoreDataProperties.swift"; path = "aquanote/TastingTag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F83B730529475DB5000BC2EB /* NoteListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListContentView.swift; sourceTree = "<group>"; };
+		F83B73072948424D000BC2EB /* whiskey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiskey.png; sourceTree = "<group>"; };
+		F83B730929484645000BC2EB /* ++UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++UILabel.swift"; sourceTree = "<group>"; };
+		F83B730D29486021000BC2EB /* IconAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IconAssets.xcassets; sourceTree = "<group>"; };
+		F83B731429498271000BC2EB /* AquaListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaListViewCell.swift; sourceTree = "<group>"; };
+		F83B73162949828F000BC2EB /* AquaListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaListContentView.swift; sourceTree = "<group>"; };
+		F83B73182949847D000BC2EB /* AquaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaListViewController.swift; sourceTree = "<group>"; };
+		F83B731A29498704000BC2EB /* AquaListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaListViewPresenter.swift; sourceTree = "<group>"; };
+		F83F02AC2DE7104600321DAF /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		F83F02AE2DE710DC00321DAF /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
+		F84821EC299FA99D00BDF147 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F84821ED299FA99D00BDF147 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F84821F129A104C200BDF147 /* FIRStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRStorageService.swift; sourceTree = "<group>"; };
+		F84DC8B4299636A500EED240 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		F84DC8BA299CD3FE00EED240 /* NoResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultsCell.swift; sourceTree = "<group>"; };
+		F8591CDF2A10E46000694C5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8611151293B6CE0008BE297 /* aquanote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aquanote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8611154293B6CE0008BE297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8611156293B6CE0008BE297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F861115E293B6CE0008BE297 /* aquanote.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = aquanote.xcdatamodel; sourceTree = "<group>"; };
+		F8611160293B6CE2008BE297 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		F8611165293B6CE2008BE297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86317E429A645420094FE43 /* CustomLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomLaunchScreen.storyboard; sourceTree = "<group>"; };
+		F86317E629A84DEA0094FE43 /* AppLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoginService.swift; sourceTree = "<group>"; };
+		F86317E829A9F8D30094FE43 /* FIRStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRStoreService.swift; sourceTree = "<group>"; };
+		F86BDE5E29CBEC0200622C92 /* aquanoteTestsUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aquanoteTestsUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86BDE8F29CC394100622C92 /* CoredataTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataTestCase.swift; sourceTree = "<group>"; };
+		F88790C629A381DB00C49210 /* aquanote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = aquanote.entitlements; sourceTree = "<group>"; };
+		F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "release-production.xcconfig"; sourceTree = "<group>"; };
+		F8A813262D7EAFAC00EB346D /* debug-production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "debug-production.xcconfig"; sourceTree = "<group>"; };
+		F8AA12B729680828006621DA /* AquaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaDetailViewController.swift; sourceTree = "<group>"; };
+		F8AA12B9297289D4006621DA /* NoteInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInputViewController.swift; sourceTree = "<group>"; };
+		F8AA12BB297289DD006621DA /* NoteInputViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInputViewPresenter.swift; sourceTree = "<group>"; };
+		F8B27A66299DA59400823D91 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8B27A68299DA5B500823D91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8B27A69299DA95700823D91 /* AquaRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaRequestViewController.swift; sourceTree = "<group>"; };
+		F8B27A6B299E472200823D91 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F8CEB75829C4582800C6625E /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		F8D25CAC29459FF50097E701 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		F8D90B3629824D54001FE693 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		F8D90B3829829C6A001FE693 /* NoteDetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewPresenter.swift; sourceTree = "<group>"; };
+		F8D90B3A2983C257001FE693 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8E419B0298B67DC009D9E47 /* NoteDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailContentView.swift; sourceTree = "<group>"; };
+		F8ED145F293B895F0058E078 /* wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wave.png; sourceTree = "<group>"; };
+		F8ED1463293B8AE10058E078 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F8ED146A293B92FD0058E078 /* RootViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewPresenter.swift; sourceTree = "<group>"; };
+		F8ED146F293DFB510058E078 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		F8ED1470293DFB510058E078 /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		F8ED1471293DFB510058E078 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		F8ED1472293DFB510058E078 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		F8ED1478293DFBF00058E078 /* ++UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++UIFont.swift"; sourceTree = "<group>"; };
+		F8ED147A293E01170058E078 /* ++UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++UIColor.swift"; sourceTree = "<group>"; };
+		F8ED147D293E2B7B0058E078 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		F8ED1480293E2FE60058E078 /* NoteListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewPresenter.swift; sourceTree = "<group>"; };
+		F8ED1489293E34070058E078 /* AquanoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquanoteAPI.swift; sourceTree = "<group>"; };
+		F8ED148F293F7EB90058E078 /* NoteListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewCell.swift; sourceTree = "<group>"; };
+		F8F85F8929AC7DF80008CD99 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		F8F85F8D29AF6E690008CD99 /* RevokeMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevokeMemberViewController.swift; sourceTree = "<group>"; };
+		FA7CC3C52816F6B47C114D5B /* Pods-aquanote-aquanoteTestsUnit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aquanote-aquanoteTestsUnit.debug.xcconfig"; path = "Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F861114E293B6CE0008BE297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E40D49DDF569262CBE84B /* Pods_aquanote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86BDE5B29CBEC0200622C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830B1DDFD13253BA7148A758 /* Pods_aquanote_aquanoteTestsUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C7210471C513897806C410C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96DE7B5289B0E138DDA5FFEA /* Pods_aquanote.framework */,
+				E334A145C1B55AF74199F2A4 /* Pods_aquanote_aquanoteTestsUnit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDFCAC900EE35A7676F65AA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33BB663ED2CFCA9BD664E141 /* Pods-aquanote.debug.xcconfig */,
+				7094BA33363C57927C721AB3 /* Pods-aquanote.release.xcconfig */,
+				FA7CC3C52816F6B47C114D5B /* Pods-aquanote-aquanoteTestsUnit.debug.xcconfig */,
+				6DA8F8AD0816688968969E4C /* Pods-aquanote-aquanoteTestsUnit.release.xcconfig */,
+				76884EF3D6A44E9A5EF26028 /* Pods-aquanote.debug(production).xcconfig */,
+				58405BBC558A682FB538B569 /* Pods-aquanote.release(production).xcconfig */,
+				00EBBBCA6C9751A5E2BC080F /* Pods-aquanote-aquanoteTestsUnit.debug(production).xcconfig */,
+				C8DED4422DBDE8AD3AEC05AB /* Pods-aquanote-aquanoteTestsUnit.release(production).xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F83B73112949823D000BC2EB /* Aqua */ = {
+			isa = PBXGroup;
+			children = (
+				F83B731329498248000BC2EB /* Presenter */,
+				F83B731229498242000BC2EB /* View */,
+				F83B73182949847D000BC2EB /* AquaListViewController.swift */,
+				F8AA12B729680828006621DA /* AquaDetailViewController.swift */,
+				F8B27A69299DA95700823D91 /* AquaRequestViewController.swift */,
+			);
+			path = Aqua;
+			sourceTree = "<group>";
+		};
+		F83B731229498242000BC2EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F83B731429498271000BC2EB /* AquaListViewCell.swift */,
+				F83B73162949828F000BC2EB /* AquaListContentView.swift */,
+				F81EB7B52949D65200A33F98 /* SearchTerm.swift */,
+				F82113A22952255F00B069E8 /* SearchTermContentView.swift */,
+				F82113A42952258700B069E8 /* SearchTermCell.swift */,
+				F84DC8BA299CD3FE00EED240 /* NoResultsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F83B731329498248000BC2EB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F83B731A29498704000BC2EB /* AquaListViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8611148293B6CE0008BE297 = {
+			isa = PBXGroup;
+			children = (
+				F8A813262D7EAFAC00EB346D /* debug-production.xcconfig */,
+				F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */,
+				F84821EC299FA99D00BDF147 /* Note+CoreDataClass.swift */,
+				F84821ED299FA99D00BDF147 /* Note+CoreDataProperties.swift */,
+				F82113C4295499CE00B069E8 /* TastingTag+CoreDataClass.swift */,
+				F82113C5295499CE00B069E8 /* TastingTag+CoreDataProperties.swift */,
+				F82113AE295310EA00B069E8 /* Aqua+CoreDataClass.swift */,
+				F82113AF295310EA00B069E8 /* Aqua+CoreDataProperties.swift */,
+				F8611153293B6CE0008BE297 /* aquanote */,
+				F86BDE5F29CBEC0200622C92 /* aquanoteTestsUnit */,
+				F8611152293B6CE0008BE297 /* Products */,
+				DDFCAC900EE35A7676F65AA3 /* Pods */,
+				9C7210471C513897806C410C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8611152293B6CE0008BE297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8611151293B6CE0008BE297 /* aquanote.app */,
+				F86BDE5E29CBEC0200622C92 /* aquanoteTestsUnit.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8611153293B6CE0008BE297 /* aquanote */ = {
+			isa = PBXGroup;
+			children = (
+				F8591CDF2A10E46000694C5A /* GoogleService-Info.plist */,
+				F88790C629A381DB00C49210 /* aquanote.entitlements */,
+				F8ED148B293F73CE0058E078 /* Model */,
+				F8ED1484293E31D40058E078 /* Service */,
+				F8ED1477293DFBE00058E078 /* Util */,
+				F8ED145C293B893D0058E078 /* Resource */,
+				F8ED145B293B89360058E078 /* Controller */,
+				F8611154293B6CE0008BE297 /* AppDelegate.swift */,
+				F8611156293B6CE0008BE297 /* SceneDelegate.swift */,
+				F8611160293B6CE2008BE297 /* ColorAssets.xcassets */,
+				F8611165293B6CE2008BE297 /* Info.plist */,
+				F861115D293B6CE0008BE297 /* aquanote.xcdatamodeld */,
+				F83B730D29486021000BC2EB /* IconAssets.xcassets */,
+				F8B27A67299DA59400823D91 /* InfoPlist.strings */,
+				F86317E429A645420094FE43 /* CustomLaunchScreen.storyboard */,
+			);
+			path = aquanote;
+			sourceTree = "<group>";
+		};
+		F86BDE5F29CBEC0200622C92 /* aquanoteTestsUnit */ = {
+			isa = PBXGroup;
+			children = (
+				F86BDE8F29CC394100622C92 /* CoredataTestCase.swift */,
+			);
+			path = aquanoteTestsUnit;
+			sourceTree = "<group>";
+		};
+		F8ED145B293B89360058E078 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F83B73112949823D000BC2EB /* Aqua */,
+				F8ED147C293E2B370058E078 /* Note */,
+				F8ED1465293B926D0058E078 /* Root */,
+				F821139E29520BED00B069E8 /* LoadingViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8ED145C293B893D0058E078 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED146E293DFB3C0058E078 /* Font */,
+				F8ED145E293B894B0058E078 /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F8ED145E293B894B0058E078 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F83B73072948424D000BC2EB /* whiskey.png */,
+				F8ED145F293B895F0058E078 /* wave.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		F8ED1465293B926D0058E078 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED1469293B92F00058E078 /* Presenter */,
+				F8ED1466293B92940058E078 /* View */,
+				F8ED1463293B8AE10058E078 /* RootViewController.swift */,
+				F8F85F8D29AF6E690008CD99 /* RevokeMemberViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F8ED1466293B92940058E078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8B27A6B299E472200823D91 /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8ED1469293B92F00058E078 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED146A293B92FD0058E078 /* RootViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8ED146E293DFB3C0058E078 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED1471293DFB510058E078 /* NotoSansKR-Bold.otf */,
+				F8ED1470293DFB510058E078 /* NotoSansKR-Light.otf */,
+				F8ED146F293DFB510058E078 /* NotoSansKR-Medium.otf */,
+				F8ED1472293DFB510058E078 /* NotoSansKR-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F8ED1477293DFBE00058E078 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED1478293DFBF00058E078 /* ++UIFont.swift */,
+				F8ED147A293E01170058E078 /* ++UIColor.swift */,
+				F83B730929484645000BC2EB /* ++UILabel.swift */,
+				F81EB7AF2949CE9400A33F98 /* ++UIViewController.swift */,
+				F81EB7B12949CEF800A33F98 /* ++UISearchController.swift */,
+				F82113B629534E1400B069E8 /* ++Date.swift */,
+				F84DC8B4299636A500EED240 /* Toast.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F8ED147C293E2B370058E078 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED148E293F7E9A0058E078 /* View */,
+				F8ED147F293E2FD80058E078 /* Presenter */,
+				F8ED147D293E2B7B0058E078 /* NoteListViewController.swift */,
+				F8AA12B9297289D4006621DA /* NoteInputViewController.swift */,
+				F8D90B3629824D54001FE693 /* NoteDetailViewController.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		F8ED147F293E2FD80058E078 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED1480293E2FE60058E078 /* NoteListViewPresenter.swift */,
+				F8AA12BB297289DD006621DA /* NoteInputViewPresenter.swift */,
+				F8D90B3829829C6A001FE693 /* NoteDetailViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8ED1484293E31D40058E078 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED1489293E34070058E078 /* AquanoteAPI.swift */,
+				F8D25CAC29459FF50097E701 /* CoreDataService.swift */,
+				F82113A62952D3D400B069E8 /* AquaService.swift */,
+				F82113BA2954900200B069E8 /* TagService.swift */,
+				F84821F129A104C200BDF147 /* FIRStorageService.swift */,
+				F86317E629A84DEA0094FE43 /* AppLoginService.swift */,
+				F86317E829A9F8D30094FE43 /* FIRStoreService.swift */,
+				F8F85F8929AC7DF80008CD99 /* NetworkMonitor.swift */,
+				F83F02AE2DE710DC00321DAF /* NoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F8ED148B293F73CE0058E078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F82113AC29530C9800B069E8 /* DBInfo.swift */,
+				F8CEB75829C4582800C6625E /* NoteModel.swift */,
+				F83F02AC2DE7104600321DAF /* Version.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8ED148E293F7E9A0058E078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED148F293F7EB90058E078 /* NoteListViewCell.swift */,
+				F83B730529475DB5000BC2EB /* NoteListContentView.swift */,
+				F8D90B3A2983C257001FE693 /* ImageCollectionViewCell.swift */,
+				F8E419B0298B67DC009D9E47 /* NoteDetailContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8611150293B6CE0008BE297 /* aquanote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8611168293B6CE2008BE297 /* Build configuration list for PBXNativeTarget "aquanote" */;
+			buildPhases = (
+				5A9F2EBF6F16998789BBEFF5 /* [CP] Check Pods Manifest.lock */,
+				F861114D293B6CE0008BE297 /* Sources */,
+				F861114E293B6CE0008BE297 /* Frameworks */,
+				F861114F293B6CE0008BE297 /* Resources */,
+				F84821F0299FDEF000BDF147 /* ShellScript */,
+				68D86AA5BD719C01D055639C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aquanote;
+			productName = aquanote;
+			productReference = F8611151293B6CE0008BE297 /* aquanote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F86BDE5D29CBEC0200622C92 /* aquanoteTestsUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86BDE6429CBEC0200622C92 /* Build configuration list for PBXNativeTarget "aquanoteTestsUnit" */;
+			buildPhases = (
+				55BCB4967E26442D805A4766 /* [CP] Check Pods Manifest.lock */,
+				F86BDE5A29CBEC0200622C92 /* Sources */,
+				F86BDE5B29CBEC0200622C92 /* Frameworks */,
+				F86BDE5C29CBEC0200622C92 /* Resources */,
+				45C3F979D182A8A610D2B35E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F86BDE6329CBEC0200622C92 /* PBXTargetDependency */,
+			);
+			name = aquanoteTestsUnit;
+			productName = aquanoteTestsUnit;
+			productReference = F86BDE5E29CBEC0200622C92 /* aquanoteTestsUnit.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8611149293B6CE0008BE297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F8611150293B6CE0008BE297 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					F86BDE5D29CBEC0200622C92 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F8611150293B6CE0008BE297;
+					};
+				};
+			};
+			buildConfigurationList = F861114C293B6CE0008BE297 /* Build configuration list for PBXProject "aquanote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = F8611148293B6CE0008BE297;
+			productRefGroup = F8611152293B6CE0008BE297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8611150293B6CE0008BE297 /* aquanote */,
+				F86BDE5D29CBEC0200622C92 /* aquanoteTestsUnit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F861114F293B6CE0008BE297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8ED1473293DFB510058E078 /* NotoSansKR-Medium.otf in Resources */,
+				F8ED1474293DFB510058E078 /* NotoSansKR-Light.otf in Resources */,
+				F83B73082948424D000BC2EB /* whiskey.png in Resources */,
+				F8611161293B6CE2008BE297 /* ColorAssets.xcassets in Resources */,
+				F83B730E29486021000BC2EB /* IconAssets.xcassets in Resources */,
+				F8ED1475293DFB510058E078 /* NotoSansKR-Bold.otf in Resources */,
+				F8ED1460293B895F0058E078 /* wave.png in Resources */,
+				F8ED1476293DFB510058E078 /* NotoSansKR-Regular.otf in Resources */,
+				F8591CE02A10E46000694C5A /* GoogleService-Info.plist in Resources */,
+				F86317E529A645420094FE43 /* CustomLaunchScreen.storyboard in Resources */,
+				F8B27A65299DA59400823D91 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86BDE5C29CBEC0200622C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45C3F979D182A8A610D2B35E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aquanote-aquanoteTestsUnit/Pods-aquanote-aquanoteTestsUnit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55BCB4967E26442D805A4766 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aquanote-aquanoteTestsUnit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A9F2EBF6F16998789BBEFF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aquanote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68D86AA5BD719C01D055639C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aquanote/Pods-aquanote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aquanote/Pods-aquanote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aquanote/Pods-aquanote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84821F0299FDEF000BDF147 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its pat${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}h.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F861114D293B6CE0008BE297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82113AD29530C9800B069E8 /* DBInfo.swift in Sources */,
+				F84DC8B5299636A500EED240 /* Toast.swift in Sources */,
+				F8AA12BC297289DD006621DA /* NoteInputViewPresenter.swift in Sources */,
+				F82113B0295310EA00B069E8 /* Aqua+CoreDataClass.swift in Sources */,
+				F84821F229A104C200BDF147 /* FIRStorageService.swift in Sources */,
+				F8ED147B293E01170058E078 /* ++UIColor.swift in Sources */,
+				F83F02AF2DE710DC00321DAF /* NoteService.swift in Sources */,
+				F82113B729534E1400B069E8 /* ++Date.swift in Sources */,
+				F82113B1295310EA00B069E8 /* Aqua+CoreDataProperties.swift in Sources */,
+				F8F85F8E29AF6E690008CD99 /* RevokeMemberViewController.swift in Sources */,
+				F83B73192949847D000BC2EB /* AquaListViewController.swift in Sources */,
+				F83B731529498271000BC2EB /* AquaListViewCell.swift in Sources */,
+				F82113C7295499CE00B069E8 /* TastingTag+CoreDataProperties.swift in Sources */,
+				F8E419B1298B67DC009D9E47 /* NoteDetailContentView.swift in Sources */,
+				F8ED1481293E2FE60058E078 /* NoteListViewPresenter.swift in Sources */,
+				F8B27A6C299E472200823D91 /* RootView.swift in Sources */,
+				F82113A72952D3D400B069E8 /* AquaService.swift in Sources */,
+				F81EB7B22949CEF800A33F98 /* ++UISearchController.swift in Sources */,
+				F8ED1464293B8AE10058E078 /* RootViewController.swift in Sources */,
+				F83F02AD2DE7104600321DAF /* Version.swift in Sources */,
+				F8ED148A293E34070058E078 /* AquanoteAPI.swift in Sources */,
+				F83B730629475DB5000BC2EB /* NoteListContentView.swift in Sources */,
+				F86317E929A9F8D30094FE43 /* FIRStoreService.swift in Sources */,
+				F81EB7B62949D65200A33F98 /* SearchTerm.swift in Sources */,
+				F8ED1490293F7EB90058E078 /* NoteListViewCell.swift in Sources */,
+				F8D25CAD29459FF50097E701 /* CoreDataService.swift in Sources */,
+				F84821EF299FA99D00BDF147 /* Note+CoreDataProperties.swift in Sources */,
+				F8ED146B293B92FD0058E078 /* RootViewPresenter.swift in Sources */,
+				F83B730A29484645000BC2EB /* ++UILabel.swift in Sources */,
+				F8D90B3B2983C258001FE693 /* ImageCollectionViewCell.swift in Sources */,
+				F8CEB75929C4582800C6625E /* NoteModel.swift in Sources */,
+				F8D90B3929829C6A001FE693 /* NoteDetailViewPresenter.swift in Sources */,
+				F8B27A6A299DA95700823D91 /* AquaRequestViewController.swift in Sources */,
+				F82113C6295499CE00B069E8 /* TastingTag+CoreDataClass.swift in Sources */,
+				F82113A32952255F00B069E8 /* SearchTermContentView.swift in Sources */,
+				F8AA12B829680828006621DA /* AquaDetailViewController.swift in Sources */,
+				F81EB7B02949CE9500A33F98 /* ++UIViewController.swift in Sources */,
+				F82113BB2954900200B069E8 /* TagService.swift in Sources */,
+				F8D90B3729824D54001FE693 /* NoteDetailViewController.swift in Sources */,
+				F821139F29520BED00B069E8 /* LoadingViewCell.swift in Sources */,
+				F8F85F8A29AC7DF80008CD99 /* NetworkMonitor.swift in Sources */,
+				F8AA12BA297289D4006621DA /* NoteInputViewController.swift in Sources */,
+				F8611155293B6CE0008BE297 /* AppDelegate.swift in Sources */,
+				F8ED1479293DFBF00058E078 /* ++UIFont.swift in Sources */,
+				F8611157293B6CE0008BE297 /* SceneDelegate.swift in Sources */,
+				F82113A52952258700B069E8 /* SearchTermCell.swift in Sources */,
+				F861115F293B6CE0008BE297 /* aquanote.xcdatamodeld in Sources */,
+				F83B731B29498704000BC2EB /* AquaListViewPresenter.swift in Sources */,
+				F86317E729A84DEA0094FE43 /* AppLoginService.swift in Sources */,
+				F84DC8BB299CD3FE00EED240 /* NoResultsCell.swift in Sources */,
+				F84821EE299FA99D00BDF147 /* Note+CoreDataClass.swift in Sources */,
+				F83B73172949828F000BC2EB /* AquaListContentView.swift in Sources */,
+				F8ED147E293E2B7B0058E078 /* NoteListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86BDE5A29CBEC0200622C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86BDE9029CC394100622C92 /* CoredataTestCase.swift in Sources */,
+				F86BDE8C29CC16C800622C92 /* aquanote.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F86BDE6329CBEC0200622C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8611150293B6CE0008BE297 /* aquanote */;
+			targetProxy = F86BDE6229CBEC0200622C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8B27A67299DA59400823D91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B27A66299DA59400823D91 /* ko */,
+				F8B27A68299DA5B500823D91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8611166293B6CE2008BE297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		F8611167293B6CE2008BE297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F8611169293B6CE2008BE297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33BB663ED2CFCA9BD664E141 /* Pods-aquanote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aquanote/aquanote.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aquanote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "아쿠아노트";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = CustomLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.yh.aquanote";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		F861116A293B6CE2008BE297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7094BA33363C57927C721AB3 /* Pods-aquanote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aquanote/aquanote.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aquanote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "아쿠아노트";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = CustomLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.yh.aquanote";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F86BDE6529CBEC0200622C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7CC3C52816F6B47C114D5B /* Pods-aquanote-aquanoteTestsUnit.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanoteTestsUnit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aquanote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/aquanote";
+			};
+			name = Debug;
+		};
+		F86BDE6629CBEC0200622C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA8F8AD0816688968969E4C /* Pods-aquanote-aquanoteTestsUnit.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanoteTestsUnit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aquanote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/aquanote";
+			};
+			name = Release;
+		};
+		F88A93EF2D7EA5180043F7BB /* Release(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release(production)";
+		};
+		F88A93F02D7EA5180043F7BB /* Release(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aquanote/aquanote.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aquanote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "아쿠아노트";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = CustomLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.yh.aquanote";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release(production)";
+		};
+		F88A93F12D7EA5180043F7BB /* Release(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanoteTestsUnit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aquanote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/aquanote";
+			};
+			name = "Release(production)";
+		};
+		F88A93F22D7EA58A0043F7BB /* Debug(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug(production)";
+		};
+		F88A93F32D7EA58A0043F7BB /* Debug(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aquanote/aquanote.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(BUILD_NUMBER)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aquanote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "아쿠아노트";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = CustomLaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.yh.aquanote";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug(production)";
+		};
+		F88A93F42D7EA58A0043F7BB /* Debug(production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88A93ED2D7EA3A10043F7BB /* release-production.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = H9DB76JYJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.aquanoteTestsUnit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aquanote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/aquanote";
+			};
+			name = "Debug(production)";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F861114C293B6CE0008BE297 /* Build configuration list for PBXProject "aquanote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8611166293B6CE2008BE297 /* Debug */,
+				F88A93F22D7EA58A0043F7BB /* Debug(production) */,
+				F8611167293B6CE2008BE297 /* Release */,
+				F88A93EF2D7EA5180043F7BB /* Release(production) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8611168293B6CE2008BE297 /* Build configuration list for PBXNativeTarget "aquanote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8611169293B6CE2008BE297 /* Debug */,
+				F88A93F32D7EA58A0043F7BB /* Debug(production) */,
+				F861116A293B6CE2008BE297 /* Release */,
+				F88A93F02D7EA5180043F7BB /* Release(production) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86BDE6429CBEC0200622C92 /* Build configuration list for PBXNativeTarget "aquanoteTestsUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86BDE6529CBEC0200622C92 /* Debug */,
+				F88A93F42D7EA58A0043F7BB /* Debug(production) */,
+				F86BDE6629CBEC0200622C92 /* Release */,
+				F88A93F12D7EA5180043F7BB /* Release(production) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F861115D293B6CE0008BE297 /* aquanote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F861115E293B6CE0008BE297 /* aquanote.xcdatamodel */,
+			);
+			currentVersion = F861115E293B6CE0008BE297 /* aquanote.xcdatamodel */;
+			path = aquanote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8611149293B6CE0008BE297 /* Project object */;
+}
